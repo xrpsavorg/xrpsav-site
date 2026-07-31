@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>XRPSAV — a cognitive patrimony for the critical reading of photography</title>
+<meta name="description" content="XRPSAV is a private, non-commercial research system that builds sourced records of photographers so that photographs can be read against documented evidence. This page also identifies the research client XRPSAV-research/0.1.">
+<style>
+  :root { color-scheme: light dark; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0 auto; padding: 3rem 1.25rem 6rem; max-width: 42rem;
+    font: 400 17px/1.65 ui-serif, Georgia, "Times New Roman", serif;
+    color: #17181a; background: #fbfaf8;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e6e4e0; background: #121213; } }
+  :root[data-theme="dark"] body { color: #e6e4e0; background: #121213; }
+  :root[data-theme="light"] body { color: #17181a; background: #fbfaf8; }
+  h1 { font-size: 1.5rem; font-weight: 600; letter-spacing: -0.01em; margin: 0 0 .35rem; }
+  .sub { font-size: .95rem; opacity: .72; margin: 0 0 2.75rem; }
+  h2 { font-size: 1.02rem; font-weight: 600; margin: 2.75rem 0 .6rem; letter-spacing: .01em; }
+  p { margin: 0 0 1rem; }
+  code, .ua {
+    font: 500 .88em/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
+    background: rgba(128,128,128,.13); padding: .12em .38em; border-radius: 3px;
+  }
+  .ua { display: inline-block; padding: .3em .55em; }
+  ul { margin: 0 0 1rem; padding-left: 1.1rem; }
+  li { margin: .35rem 0; }
+  a { color: inherit; text-underline-offset: .18em; }
+  hr { border: 0; border-top: 1px solid rgba(128,128,128,.28); margin: 3rem 0 1.25rem; }
+  footer { font-size: .86rem; opacity: .66; }
+</style>
+</head>
+<body>
+
+<h1>XRPSAV</h1>
+<p class="sub">A cognitive patrimony for the critical reading of photography.</p>
+
+<p>XRPSAV is a private, non-commercial research system. It assembles carefully sourced records about
+individual photographers — their names in their own scripts, their dates, the places where they
+worked, the people they taught and learned from, and the biographical prose that libraries and
+archives hold about them — so that a photograph can be read against documented evidence rather than
+against assumption.</p>
+
+<p>It is a research instrument, not a product. It is not sold, not licensed, and not offered as a
+service.</p>
+
+<h2>Every statement keeps its source</h2>
+
+<p>A record in XRPSAV is not a merged summary. Each value is kept with the institution that stated
+it, the exact request that retrieved it, and the moment it was retrieved. Where two institutions
+disagree, both statements are kept and shown side by side: the disagreement is evidence, and
+flattening it would destroy the thing the system exists to preserve.</p>
+
+<h2>The research client</h2>
+
+<p>If you are an administrator who has seen this project's requests in your logs, they come from a
+single purpose-built client, which identifies itself as:</p>
+
+<p><span class="ua">XRPSAV-research/0.1</span></p>
+
+<p>What it does, and what it will not do:</p>
+
+<ul>
+  <li>It reads <code>robots.txt</code> before its first request to a host, evaluates it for its own
+      user-agent under RFC 9309, and stores that permission verdict, dated, alongside every record
+      it keeps.</li>
+  <li>It requests <strong>individual records for named people</strong>. It is not a crawler and does
+      not walk a site.</li>
+  <li>It paces its requests and honours <code>Retry-After</code>.</li>
+  <li>It does not evade rate limits, does not solve challenges, and does not present itself as
+      anything other than what it is.</li>
+  <li><strong>No model is trained or fine-tuned on retrieved data.</strong> Language models are used
+      to turn prose into individually cited statements; every statement must carry the exact
+      sentence it came from, or it is refused.</li>
+  <li>Retrieved records are <strong>not redistributed</strong>.</li>
+</ul>
+
+<p>If you would prefer this client not to request from your service, or you would like it to behave
+differently, write to <a href="mailto:info@xrpsav.org">info@xrpsav.org</a> and it will be changed. A
+request to stop is honoured without argument, and needs no reason.</p>
+
+<h2>Contact</h2>
+
+<p><a href="mailto:info@xrpsav.org">info@xrpsav.org</a> — read by Claudio Caviglia, who runs the
+project.</p>
+
+<hr>
+<footer>
+  <p>This page exists so that the identifier in the user-agent above resolves to something that
+  answers. It is deliberately plain and describes only what is true today.</p>
+</footer>
+
+</body>
+</html>

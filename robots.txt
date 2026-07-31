@@ -1,0 +1,6 @@
+# xrpsav.org - the public page of a research project.
+# One page, describing the project and the research client XRPSAV-research/0.1.
+# Kept ASCII on purpose: a robots.txt is read by many different parsers and none of
+# them is obliged to guess an encoding.
+User-agent: *
+Allow: /
